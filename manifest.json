@@ -1,0 +1,19 @@
+{
+    "name": "Trash",
+    "version": "1.0",
+    "manifest_version": 2,
+    "description": "Test Chromemo",
+
+    "browser_action": {
+      "default_popup": "popup.html",
+      "default_icon": "memo.png"
+    },
+
+    "icons": {
+      "48": "memo.png"
+    },
+
+    "permissions": [
+        "activeTab"
+    ]
+  }
