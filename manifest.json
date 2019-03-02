@@ -1,20 +1,26 @@
 {
     "name": "Chromemo",
     "version": "1.0",
-    "manifest_version": 2,
-    "description": "Memo for webpages",
+    "description": "Memo for Webpages",
 
     "browser_action": {
       "default_popup": "popup.html",
-      "default_icon": "memo.png"
+      "default_icon": {
+        "16": "chromemo-logo-16.png",
+        "48": "chromemo-logo-48.png",
+        "128": "chromemo-logo-128.png"
+      }
     },
 
     "icons": {
-      "48": "memo.png"
+      "16": "chromemo-logo-16.png",
+      "48": "chromemo-logo-48.png",
+      "128": "chromemo-logo-128.png"
     },
 
     "permissions": [
         "activeTab",
         "storage"
     ]
+    "manifest_version": 2
   }
