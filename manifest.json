@@ -3,6 +3,7 @@
   "version": "1.0",
   "description" : "Memo that has memes as background depending on what keywords appear throughout the page",
   "manifest_version": 2,
+  "permissions": ["tabs"]
   "browser_action": {
     "default_popup": "memo.html",
     "default_icon": "memo.png"
