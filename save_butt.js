@@ -16,7 +16,13 @@
 //   }, false);
 
 window.onload = function() {
-    document.getElementById('save_button').onclick = function() {
+    chrome.storage.sync.set({'myLine': ''});
+    chrome.storage.sync.get('myLine', function(data) {
+        var div = document.getElementById('view_text');
+        div.innerHTML = data.myLine;
+    });
+
+    document.getElementById('save_button').onclick = function() {    
         var value = document.getElementById('my_text').value;
 
         chrome.storage.sync.set({'myLine': value}, function(){
