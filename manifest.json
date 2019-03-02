@@ -1,8 +1,8 @@
 {
-    "name": "Trash",
+    "name": "Chromemo",
     "version": "1.0",
     "manifest_version": 2,
-    "description": "Test Chromemo",
+    "description": "Memo for webpages",
 
     "browser_action": {
       "default_popup": "popup.html",
