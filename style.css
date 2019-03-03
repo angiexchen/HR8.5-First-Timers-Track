@@ -1,0 +1,17 @@
+button {
+    position: absolute;
+    left: 50%;
+    bottom: 5%;
+    height: 20px;
+    width: 55px;
+  }
+
+  .text_edit{
+    width: 400px;
+    height: 500px;
+    
+}
+
+  #view_text{
+      width: 400px;
+  }

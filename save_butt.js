@@ -25,6 +25,7 @@ function getCurrentTabUrl(callback) {
       var tab = tabs[0];
       var url = tab.url;
       callback(url);
+      return url;
     });
  }
 
@@ -55,12 +56,15 @@ window.onload = function() {
     var box = document.getElementById('view_text');
     var myline = getCurrentTabUrl(function(url) {
         myline = url;
+        
     }); 
 
     chrome.storage.sync.set({myline: ''});
     chrome.storage.sync.get(myline, function(data) {
         box.innerHTML = data.myline;
     });
+
+
 
     document.getElementById('save_button').onclick = function() {    
         var note = document.getElementById('my_text').value;
